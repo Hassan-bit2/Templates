@@ -30,8 +30,8 @@
           Dropdown
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">About us</a>
+          <a class="dropdown-item" href="#">Contact us</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
@@ -59,7 +59,7 @@
 
 <div class="container">
 
-  <form action='/analyze' method='get'>
+  <form action='/analyze' method='post'>{% csrf_token %}
 
 
 
@@ -88,7 +88,7 @@
   <label class="custom-control-label" for="customSwitch4">Extra Spaces Remover</label>
 </div>
 
-<button type="submit" class="btn btn-outline-success">Analyze text</button>
+<button type="submit" class="btn btn-outline-info">Analyze text</button>
     </form>
 </div>
 
